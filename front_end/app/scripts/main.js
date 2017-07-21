@@ -10,11 +10,11 @@ var checked2 = $('#option-2').is(':checked');
 if (checked1 == 1) {
     $('.Step_1_Content').show();
     $('.Step_2_Content').hide();
-    $('.Step_3_Content').hide();
+    $('button[name=submitBtn]').show();
 } else if (checked2 == 1) {
     $('.Step_2_Content').show();
     $('.Step_1_Content').hide();
-    $('.Step_3_Content').hide();
+    $('button[name=submitBtn]').hide();
 }
 
 $(".segmented-control").change(function () {
@@ -24,16 +24,11 @@ $(".segmented-control").change(function () {
     if (checked1 == 1) {
         $('.Step_1_Content').show();
         $('.Step_2_Content').hide();
-        $('.Step_3_Content').hide();
+        $('button[name=submitBtn]').show();
     } else if (checked2 == 1) {
         $('.Step_2_Content').show();
         $('.Step_1_Content').hide();
-        $('.Step_3_Content').hide();
+        $('button[name=submitBtn]').hide();
     }
 });
 
-
-
-$('button[name=submitBtn]').onClick(function(){
-    console.log('hey');
-});

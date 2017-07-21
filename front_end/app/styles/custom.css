@@ -3,6 +3,14 @@
     align-items: center;
 }
 
+.list-group-hover .list-group-item:hover {
+    background-color: #f5f5f5;
+}
+
+.card-title {
+  color: #000;
+}
+
 .segmented-control {
   display: table;
   width: 100%;
@@ -37,16 +45,4 @@
 .segmented-control__input:checked + .segmented-control__label {
   background: #337ab7;
   color: #ffffff;
-}
-
-/*input[type=radio] {
-  display: inline;
-}*/
-
-.list-group-hover .list-group-item:hover {
-    background-color: #f5f5f5;
-}
-
-.card-title {
-  color: #000;
 }
