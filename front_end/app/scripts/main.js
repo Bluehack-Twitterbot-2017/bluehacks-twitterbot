@@ -1,6 +1,9 @@
 // console.log('\'Allo \'Allo!');
 
 // (function () {
+
+//   const OPENWHISK_BACKEND = 'https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/ab595eef9b6280db8eaf8c669ee4075b2d0a902858efa28b310ac00eb1248744/bluehacks-api/submit';
+
 //   // IDs of blogs to search: https://support.google.com/blogger/answer/41386?hl=en
 //   var blogIds = ['3273926388124010297']
 //   // blogger API key: https://support.google.com/cloud/answer/6158862
