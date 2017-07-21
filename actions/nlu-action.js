@@ -17,7 +17,7 @@ function main(params) {
             version_date: '2017-02-27'
         });
         console.log('validated credentials');
-        
+	// targets for emotions can be set by the user; can be determined by twitter hashtags
         var parameters = {
             text: params.input,
             language: 'en',
