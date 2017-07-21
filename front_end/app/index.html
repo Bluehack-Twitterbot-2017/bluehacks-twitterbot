@@ -45,43 +45,54 @@
         </div>
 
         <div class="jumbotron">
-          <h1>–– Blue|Hack ––</h1>
-          
+          <h1>Blue|Hack</h1>
           <!-- segmented control section -->
           <ul class="segmented-control">
             <li class="segmented-control__item">
               <input class="segmented-control__input" type="radio" value="1" name="option" id="option-1" checked>
-              <label class="segmented-control__label" for="option-1">Create Your Action</label>
+              <label class="segmented-control__label" for="option-1">Create Your Concept</label>
             </li>
             <li class="segmented-control__item">
               <input class="segmented-control__input" type="radio" value="2" name="option" id="option-2">
-              <label class="segmented-control__label" for="option-2">Saved Actions</label>
+              <label class="segmented-control__label" for="option-2">Saved Concepts</label>
             </li>
           </ul>
-          <div class="Step_1_Content">
-            <p>This is where you create your own action</p>
-            Keyword: <input type="text" name="">
-            <br>
-            Sentiment (%): <input type="number" name="">
-            <br>
-            like <input type="radio" name="action">
-            reply <input type="radio" name="action">
-            retweet <input type="radio" name="action">
-            retweet & reply <input type="radio" name="action">
+          <!-- create your concept -->
+          <div class="Step_1_Content"> 
+            <form>
+              <div class="form-inline">
+                <label for="formGroupExampleInput">Keyword</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" value="ibm, microsoft">
+              </div>
+<!--               <div class="form-inline">
+                <label for="formGroupExampleInput2">Frequency (%)</label>
+                <input type="number" class="form-control" id="formGroupExampleInput2" value="95">
+              </div>
+              <div class="form-inline">
+                <label for="formGroupExampleInput2">Sentiment</label>
+                <input type="number" class="form-control" id="formGroupExampleInput2" value="83">
+              </div>
+              <div class="form-inline">
+                <label class="mr-sm-2" for="inlineFormCustomSelect">Action</label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                  <option value="1" selected="">like</option>
+                  <option value="2">reply</option>
+                  <option value="3">retweet</option>
+                  <option value="4">retweet & reply</option>
+                </select>
+              </div> -->
+              <button type="submit" class="btn btn-primary" name="submitBtn">Submit</button>
+            </form>
           </div>
+          <!-- saved concepts -->
           <div class="Step_2_Content">
             <ul class="list-group text-left list-group-hover">
               <li class="list-group-item">
-                IBM love
-                <button type="button" class="pull-right">Use</button>
-              </li>
-              <li class="list-group-item">
-                Microsoft (a.k.a. public enemy #1) hate
+                IBM
                 <button type="button" class="pull-right">Use</button>
               </li>
             </ul>
           </div>
-          
         </div>
 
         <div class="row text-center">
@@ -102,8 +113,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <section id="resultsbox"></section> -->
 
           <div class="col-md-1">
             <button type="button" class="btn btn-danger" title="Don't retweet"><i class="fa fa-ban fa-lg" aria-hidden="true"></i></button>

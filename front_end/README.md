@@ -1,1 +1,1 @@
-Start by cloning the repo and using the command `gulp serve` in the terminal.
+Start by cloning the repo and using the command `gulp serve` in the terminal in this directory.
