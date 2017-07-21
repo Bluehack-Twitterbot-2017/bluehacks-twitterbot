@@ -45,17 +45,52 @@
         </div>
 
         <div class="jumbotron">
-          <p>Blue|Hack</p>
-          <input type="text" class="form-control" placeholder="Search for...">
+          <h1>–– Blue|Hack ––</h1>
+          
+          <!-- segmented control section -->
+          <ul class="segmented-control">
+            <li class="segmented-control__item">
+              <input class="segmented-control__input" type="radio" value="1" name="option" id="option-1" checked>
+              <label class="segmented-control__label" for="option-1">Create Your Action</label>
+            </li>
+            <li class="segmented-control__item">
+              <input class="segmented-control__input" type="radio" value="2" name="option" id="option-2">
+              <label class="segmented-control__label" for="option-2">Saved Actions</label>
+            </li>
+          </ul>
+          <div class="Step_1_Content">
+            <p>This is where you create your own action</p>
+            Keyword: <input type="text" name="">
+            <br>
+            Sentiment (%): <input type="number" name="">
+            <br>
+            like <input type="radio" name="action">
+            reply <input type="radio" name="action">
+            retweet <input type="radio" name="action">
+            retweet & reply <input type="radio" name="action">
+          </div>
+          <div class="Step_2_Content">
+            <ul class="list-group text-left list-group-hover">
+              <li class="list-group-item">
+                IBM love
+                <button type="button" class="pull-right">Use</button>
+              </li>
+              <li class="list-group-item">
+                Microsoft (a.k.a. public enemy #1) hate
+                <button type="button" class="pull-right">Use</button>
+              </li>
+            </ul>
+          </div>
+          
         </div>
 
         <div class="row text-center">
-            <h1>Twitter Queue</h1>
+          <h1>Twitter Queue</h1>
         </div>
 
         <div class="row marketing vertical-align">
           <div class="col-md-1">
-            <button title="Like"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-primary" title="Like"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button>
           </div>
 
           <div class="col-md-9">
@@ -71,10 +106,10 @@
           <!-- <section id="resultsbox"></section> -->
 
           <div class="col-md-1">
-            <button title="Don't retweet"><i class="fa fa-ban fa-lg" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-danger" title="Don't retweet"><i class="fa fa-ban fa-lg" aria-hidden="true"></i></button>
           </div>
           <div class="col-md-1">
-            <button title="Retweet"><i class="fa fa-check fa-lg" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-success" title="Retweet"><i class="fa fa-check fa-lg" aria-hidden="true"></i></button>
           </div>
         </div>
 
