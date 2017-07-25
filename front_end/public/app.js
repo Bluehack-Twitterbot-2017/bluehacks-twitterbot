@@ -4,24 +4,22 @@ var listOfTweets = [];
 
 app.controller('myCtrl', function($scope, TwitterService){
 	$scope.getSearch = function(search){
-		console.log("search entered:", search);
+		// console.log("search entered:", search);
 		TwitterService.getSearch(search)
 		    .then(function(data){
             parsedData = JSON.parse(data.result.searchData);
             tweets = parsedData.statuses;
             // console.log(tweets);
-
             listOfTweets = tweets;
-            console.log("listof tweets:",listOfTweets);
-            // console.log(listOfTweets.length)
+            // console.log("listof tweets:",listOfTweets);
 
 		        $scope.twitterErrors = undefined;
             $scope.results = tweets
 
-            sentimentAnalysis();
+            // sentimentAnalysis();
 		    })
 		    .catch(function(error){
-		        console.error('there was an error retrieving data: ', error);
+		        console.error("There was an error retrieving data:", error);
 		        $scope.twitterErrors = error.error;
 		    })
 	}
@@ -76,34 +74,8 @@ sentimentAnalysis = function () {
           console.log("Sentiment:", messageResponse.sentiment.targets[0].label);
         }
       }
-
     })
   }
 }
 
-    // for segmented control
-    var checked1 = $('#option-1').is(':checked');
-    var checked2 = $('#option-2').is(':checked');
-    if (checked1 == 1) {
-      $('.Step_1_Content').show();
-      $('.Step_2_Content').hide();
-      $('button[name=submitBtn]').show();
-    } else if (checked2 == 1) {
-      $('.Step_2_Content').show();
-      $('.Step_1_Content').hide();
-      $('button[name=submitBtn]').hide();
-    }
-    $(".segmented-control").change(function () {
-      var checked1 = $('#option-1').is(':checked');
-      var checked2 = $('#option-2').is(':checked');
 
-      if (checked1 == 1) {
-        $('.Step_1_Content').show();
-        $('.Step_2_Content').hide();
-        $('button[name=submitBtn]').show();
-      } else if (checked2 == 1) {
-        $('.Step_2_Content').show();
-        $('.Step_1_Content').hide();
-        $('button[name=submitBtn]').hide();
-      }
-    });

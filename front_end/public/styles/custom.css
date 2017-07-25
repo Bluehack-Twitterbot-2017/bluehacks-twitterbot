@@ -1,14 +1,20 @@
 .vertical-align {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .list-group-hover .list-group-item:hover {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .card-title {
   color: #000;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  bottom: 0;
 }
 
 .segmented-control {
@@ -46,3 +52,5 @@
   background: #337ab7;
   color: #ffffff;
 }
+
+
