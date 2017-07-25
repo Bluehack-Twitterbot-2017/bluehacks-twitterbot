@@ -11,5 +11,5 @@
 	- https://twitter.com/statuses/ID
 	- twitter.com/twitter-user-screen-name/status/tweet-id-str
 - allow user to press enter to "get queue"
-- format time better
+- format time
 - better UI
